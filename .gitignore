@@ -1,0 +1,25 @@
+.pytest_cache
+venv
+.env
+
+# DS_Store (MacOS)
+
+.DS_Store
+
+__pycache__
+.idea
+
+# jupyterlab
+
+.ipynb_checkpoints
+.virtual_documents
+.lsp_symlink
+
+# for pytorch lightning
+
+lightning_logs
+
+# models and data
+
+\*.pth
+data/
