@@ -2,7 +2,7 @@
 
 ## Getting Started
 * [Install](https://python-poetry.org/docs/) poetry.
-* Run ```cd project-template```
+* Run ```cd {{cookiecutter.project_name}}```
 * Run ```make setup_env``` to install dependencies. 
 This command will create poetry env for project  and install pre-commit hooks.
 * Run ```poetry shell``` to activate the virtual environment.
