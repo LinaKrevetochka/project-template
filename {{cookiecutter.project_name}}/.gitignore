@@ -7,7 +7,7 @@ venv
 .DS_Store
 
 __pycache__
-.idea
+../.idea
 
 # jupyterlab
 

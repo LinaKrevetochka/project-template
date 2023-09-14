@@ -2,7 +2,7 @@
 
 PYTHON_EXEC := python3.9
 
-PROJECT_NAME := project_template
+PROJECT_NAME :=  {{cookiecutter.project_name}}
 
 
 setup_env:
