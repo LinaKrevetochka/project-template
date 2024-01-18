@@ -13,6 +13,7 @@ setup_env:
 	@echo "Virtual environment has been created."
 	@echo "Path to Python executable:"
 	@echo `poetry env info -p`/bin/python
+	poetry run pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.0/en_core_web_sm-2.3.0.tar.gz --no-deps
 
 
 jupyterlab_start:
@@ -26,3 +27,11 @@ jupyterlab_start:
 
 run_training:
 	poetry run $(PYTHON_EXEC) -m src.train
+
+PYTHON_PACKAGES_NAMES = cleaning_pipeline
+
+run_tests:
+	for dir in $(PYTHON_PACKAGES_NAMES); do\
+		cd $$dir && poetry run pytest ./tests;\
+		cd ..;\
+	done
