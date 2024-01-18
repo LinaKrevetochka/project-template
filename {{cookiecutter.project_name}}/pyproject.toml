@@ -4,12 +4,17 @@ version = "0.1.0"
 description = ""
     authors = ["{{cookiecutter.author_name}}"]
 readme = "README.md"
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
-python = "3.9.*"
+python = "3.9.18"
 lightning = ">=2.0.6"
 omegaconf = ">=2.3.0"
 pydantic = ">=2.1.1"
+spacy = "^3.7.2"
+nltk = "^3.8.1"
+pandas = "^2.1.4"
+hypothesis = "6.88.3"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "3.2.1"
@@ -30,13 +35,6 @@ python-lsp-server = {version = "1.7.2", extras = ["python"]}
 matplotlib = "^3.7.1"
 ipywidgets = "^8.0.6"
 ipyplot = "^1.1.1"
-
-[tool.project]
-min_confidence = 80
-paths = ["src"]
-ignore_names = ["args", "kwargs",]
-sort_by_size = true
-verbose = false
 
 [build-system]
 requires = ["poetry-core"]

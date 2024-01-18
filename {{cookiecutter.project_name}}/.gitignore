@@ -1,6 +1,8 @@
 .pytest_cache
 venv
 .env
+.hypothesis
+**/.hypothesis/**
 
 # DS_Store (MacOS)
 

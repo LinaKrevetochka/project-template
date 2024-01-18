@@ -32,3 +32,8 @@ jobs:
     - name: Isort
       run: |
         isort . --check-only --profile black
+    
+    - name: Test with pytest
+        run: |
+          make run_tests
+          
